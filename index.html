@@ -7,8 +7,14 @@
     <title>Personal Site</title>
     <!-- <link rel="stylesheet" href="site-plan.css"> -->
     <link rel="stylesheet" href="psite.css">
+    
 
 </head>
+
+<!-- Vue JS -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
 <body>
     <div id="content">  
@@ -37,9 +43,9 @@
 <main>  
     <div class="pic-grid">
         <section>
-            <img class="img1" src="./images/IMG_1243.png" alt="homepage butterfly bush" width="200" height="280">
-            <img class="img2" src="./images/IMG_1916.png" alt="homepage girl pic" width="200" height="160">
-            <img class="img3" src="./images/picnic.jpeg" alt="homepage food pic" width="200" height="100">
+            <img class="img1" src="./images/IMG_1243.png" alt="homepage butterfly bush" width="200" height="280" style="width: 300px; height: 337px; object-fit: cover;">
+            <img class="img2" src="./images/IMG_1916.png" alt="homepage girl pic" width="200" height="160" style="width: 300px; height: 337px; object-fit: cover;">
+            <img class="img3" src="./images/picnic.jpeg" alt="homepage food pic" width="200" height="100" style="width: 300px; height: 337px; object-fit: cover;">
         </section>
 
         <!-- <h1> </h1> -->
@@ -56,9 +62,23 @@
 
     </div>
 
-    <section class="chat"> 
-        <h2>Chat and Comment With Others! &#127799 </h2>
-    </section>
+    <section id="app">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="comment">
+            <p v-for="items in item" v-text="items"></p>
+              </div><!--End Comment-->
+              </div><!--End col -->
+              </div><!-- End row -->
+          <div class="row">
+            <div class="col-6">
+          <textarea id="inputtext" type="text" class="input" placeholder="Write a comment"></textarea>
+              <button id="butt" class='primaryContained float-right' type="submit">Comment!</button>
+            </div><!-- End col -->
+          </div><!--End Row -->
+        </div><!--End Container -->
+      </section><!-- end App -->
 
 
 </main>  
@@ -82,4 +102,5 @@
 
     </div>
 </body>
+<script src="java.js"></script>
 </html>

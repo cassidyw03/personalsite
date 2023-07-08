@@ -56,17 +56,11 @@ body {
     grid-column: 1/2;
 }
 
-.img11 {
-  padding-bottom: 30px;
 }
 .img2 {
     grid-column: 2/3;
-    padding-bottom: 30px;
 }
 
-.img23 {
-  padding-bottom: 30px;
-}
 
 .img3 {
     grid-column: 3/4;
@@ -112,7 +106,7 @@ body {
     color: white;
   } */
 
-  
+
   .comments {
     border:rgba(0, 0, 0, 0.25);
     border-style: dashed;
@@ -177,6 +171,14 @@ body {
   .comment {
     display: block;
     transition: all 1s;
+    font-family: "sofia";
+  }
+
+  .comments {
+    font-family: "Sofia";
+    border: 3px solid #F7A9E3;
+    padding: 10px;
+    margin-bottom: 8px;
   }
 
   .commentClicked {
@@ -184,34 +186,37 @@ body {
     border: 1px solid #eee;
     border-radius: 5px;
     padding: 5px 10px
+  
   }
 
   .container textarea {
     width: 100%;
     border: none;
-    background: #E8E8E8;
+    background: ;
     padding: 5px 10px;
     height: 50%;
     border-radius: 5px 5px 0px 0px;
-    border-bottom: 2px solid #016BA8;
+    border: 2px solid #F7A9E3;
     transition: all 0.5s;
     margin-top: 15px;
+    font-family: "sofia";
   }
 
   /* for comment submit button */
   button.primaryContained {
-    background: #016ba8;
+    background: #F7A9E3;
     color: #fff;
     padding: 10px 10px;
     border: none;
     margin-top: 0px;
     cursor: pointer;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 4px;
     box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
     transition: 1s all;
     font-size: 10px;
     border-radius: 5px;
+    font-family: "Luckiest Guy"; color: #B6E2FF;
   }
 
   button.primaryContained:hover {

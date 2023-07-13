@@ -21,7 +21,7 @@
 //         this.newItem = "";
 //       }
 //   }
- 
+//  old version of java script forcomment section
 //   });
 
 let elem = document.getElementById('inputtext');

@@ -36,8 +36,8 @@ body {
   background-color: white;
   font-family: "Literata";
   /* padding: 40px; */
-  margin-left: 150px; /* Same width as the sidebar + left position in px */
-  font-size: 28px; /* Increased text to enable scrolling */
+  margin-left: 160px; /* Same width as the sidebar + left position in px */
+  /* font-size: 28px; Increased text to enable scrolling */
   padding: 0px 10px;
 }
 
